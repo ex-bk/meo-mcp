@@ -74,10 +74,10 @@ ChatGPT は自分のパソコンのプログラムを起動できないため、
 ### git から直接使う（npm を使わない場合）
 
 ```bash
-npx github:h-hironosuke/exbk-meo-mcp
+npx github:ex-bk/meo-mcp
 ```
 
-上の設定例の `"args": ["-y", "@exbk/meo-mcp"]` を `"args": ["-y", "github:h-hironosuke/exbk-meo-mcp"]` に置き換えると、同じように使えます。初回は組み立てのために少し時間がかかります。
+上の設定例の `"args": ["-y", "@exbk/meo-mcp"]` を `"args": ["-y", "github:ex-bk/meo-mcp"]` に置き換えると、同じように使えます。初回は組み立てのために少し時間がかかります。
 
 ### 接続先を変えたいとき
 
