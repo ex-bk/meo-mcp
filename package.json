@@ -1,0 +1,42 @@
+{
+  "name": "@exbk/meo-mcp",
+  "version": "0.1.0",
+  "description": "EXBANK MEO 管理ツールの店舗データを、Claude・Cursor などの AI から読むための接続用プログラム（閲覧専用）",
+  "type": "module",
+  "bin": {
+    "exbk-meo-mcp": "dist/index.js",
+    "meo-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "start": "node dist/index.js",
+    "test": "node scripts/smoke.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "meo",
+    "google-business-profile",
+    "exbank"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "zod": "^3.25.76"
+  },
+  "//": "スコープ @exbk が取れない場合の代案名は exbk-meo-mcp（name だけ差し替える）。bin に exbk-meo-mcp があるので npx github:ユーザー名/exbk-meo-mcp でも起動できる。prepare で dist を作る。"
+}
